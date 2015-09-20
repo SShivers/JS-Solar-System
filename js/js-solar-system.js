@@ -130,8 +130,8 @@ function createStar() {
 	star.className = 'star';
 	randomPositionX = Math.random() * 900;
 	randomPositionY = Math.random() * 700;
-	star.style.left = randomPositionX;	
-	star.style.top = randomPositionY;
+	star.style.left = randomPositionX + "px";	
+	star.style.top = randomPositionY + "px";
 	document.body.appendChild(star);
 }
 
@@ -146,7 +146,7 @@ function createComet() {
 	// Randomize the animation timing
 	cometRandomTiming = Math.random() * (1500 - 1200) + 1200;
 
-	$('.comet').animate({left: "-10", top: cometRandomGoal, opacity: "0.9"}, cometRandomTiming, "linear", function() {
+	$('.comet').animate({left: "-10px", top: cometRandomGoal + "px", opacity: "0.9"}, cometRandomTiming, "linear", function() {
 		$('.comet').remove();
 	});
 }
@@ -177,7 +177,7 @@ neptune = new planetOrbit(0.000060606060606061, 430, "neptune");
 neptune.intRadian();
 
 // Animate the moons
-moonOrbit(0.006, 20, "moon", "earth");
+moonOrbit(0.020, 20, "moon", "earth");
 moonOrbit(0.006, 27, "io", "jupiter");
 moonOrbit(0.008, 30, "ganymede", "jupiter");
 moonOrbit(0.010, 33, "callisto", "jupiter");

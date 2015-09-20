@@ -24,8 +24,8 @@ body {
 .comet {
 	height: 40px;
 	width: 40px;
-	left: 900;
-	top: -10;
+	left: 900px;
+	top: -10px;
 	background: url('img/comet01_blur_s.png');
 	position: absolute;
 	z-index: 15;
